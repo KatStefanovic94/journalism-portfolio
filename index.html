@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kat Stefanovic | OSINT Journalist + Storyteller</title>
+<meta name="description" content="Kat Stefanovic is an open-source intelligence (OSINT) journalist based in London, with nine years in newsrooms across Australia and the United Kingdom.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="mast">
+  <div class="mast-in">
+    <a class="mono" href="#home" aria-label="Kat Stefanovic, home">KS</a>
+    <nav class="main" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Portfolio</a>
+    </nav>
+    <a class="btn-outline" href="#contact">Contact</a>
+  </div>
+</header>
+
+<main>
+  <!-- HOME -->
+  <section class="view" id="view-home" aria-labelledby="h-home">
+    <div class="hero">
+      <div class="hero-photo">
+        <img src="images/kat-headshot.jpg" alt="Kat Stefanovic reporting on location" width="630" height="878">
+      </div>
+      <div class="hero-panel">
+        <div>
+          <h1 id="h-home">Kat Stefanovic</h1>
+          <p class="tag">OSINT Journalist + Storyteller</p>
+          <div class="bar" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="intro">
+      <div class="narrow">
+        <p class="statement">Kat is an open-source intelligence (OSINT) journalist based in London.</p>
+        <div class="prose">
+          <p>A Swiss Army knife journalist who has worked across radio, television and digital media over her nine-year career.</p>
+          <p>Kat is a passionate journalist, committed to unearthing the truth. She has carved out a career built on curiosity and tenacity.</p>
+          <p>Kat has experience in radio, presenting national bulletins to audiences across Australia. Her first love was television, where she enthusiastically said yes to it all: working as an executive producer, steering a bureau as chief of staff, and hitting the road as a breaking news reporter (her favourite role of all).</p>
+          <p>Kat loves getting out into new communities and exploring new cultures, but most of all, telling people’s stories and shining a light on those who have been overlooked or marginalised.</p>
+          <p>In a world where AI is blurring the lines between what is real and what is fake, Kat is drawn to the world of OSINT journalism. As a senior verification journalist at Storyful, she helps other newsrooms avoid publishing artificially generated footage, and find footage of breaking news from some of the most isolated parts of the world.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="wrap">
+        <p class="eyebrow">Selected work</p>
+        <h2>Stories</h2>
+        <div class="features" id="features"></div>
+        <div class="cta-row"><a class="btn form-btn" href="#work">See the full portfolio</a></div>
+      </div>
+    </div>
+
+    <div class="cta-band">
+      <h2>Work with Kat</h2>
+      <a class="btn solid" href="#contact">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="view" id="view-about" aria-labelledby="h-about">
+    <div class="wrap">
+      <div class="page-head">
+        <p class="eyebrow">About</p>
+        <h2 id="h-about">The story so far</h2>
+      </div>
+      <div class="about-grid">
+        <ol class="timeline" aria-label="Career timeline">
+          <li><span class="yr">Now</span><div><strong>Senior verification journalist, Storyful</strong><span>London · OSINT and verification</span></div></li>
+          <li><span class="yr">Before</span><div><strong>Breaking news reporter</strong><span>Far north Queensland · her favourite role</span></div></li>
+          <li><span class="yr">Before</span><div><strong>Executive producer and chief of staff</strong><span>Television, Australia</span></div></li>
+          <li><span class="yr">Start</span><div><strong>Radio, 2GB</strong><span>Cadetship, then presenting national bulletins</span></div></li>
+        </ol>
+        <div class="prose">
+          <p>Kat is an open-source intelligence (OSINT) journalist based in London.</p>
+          <p>A Swiss Army knife journalist who has worked across radio, television and digital media over her nine-year career.</p>
+          <p>Kat is a passionate journalist, committed to unearthing the truth. She has carved out a career built on curiosity and tenacity.</p>
+          <p>Kat has experience in radio, presenting national bulletins to audiences across Australia. Her first love was television, where she enthusiastically said yes to it all: working as an executive producer, steering a bureau as chief of staff, and hitting the road as a breaking news reporter (her favourite role of all).</p>
+          <p>Kat loves getting out into new communities and exploring new cultures, but most of all, telling people’s stories and shining a light on those who have been overlooked or marginalised.</p>
+          <p>In a world where AI is blurring the lines between what is real and what is fake, Kat is drawn to the world of OSINT journalism. As a senior verification journalist at Storyful, she helps other newsrooms avoid publishing artificially generated footage, and find footage of breaking news from some of the most isolated parts of the world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="view" id="view-work" aria-labelledby="h-work">
+    <div class="wrap">
+      <div class="page-head">
+        <p class="eyebrow">Portfolio</p>
+        <h2 id="h-work">Career portfolio</h2>
+      </div>
+      <div class="filters" role="group" aria-label="Filter the portfolio">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="report" aria-pressed="false">Reporting</button>
+        <button type="button" data-filter="produce" aria-pressed="false">Producing</button>
+        <button type="button" data-filter="other" aria-pressed="false">Radio, digital &amp; live</button>
+      </div>
+      <div id="worklist" class="groups"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="view" id="view-contact" aria-labelledby="h-contact">
+    <div class="wrap">
+      <div class="page-head">
+        <p class="eyebrow">Contact</p>
+        <h2 id="h-contact">Connect with Kat</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="direct">
+          <p style="margin:0;max-width:36ch">Commissions, investigations, presenting and hosting bookings, interviews and collaborations.</p>
+          <div><span class="k">Agent / bookings</span><span>Agent name, if you have one</span></div>
+          <div><span class="k">Based</span><span>London · available UK-wide</span></div>
+        </div>
+        <div>
+          <form id="enquiry" novalidate>
+            <div class="row2">
+              <label for="f-name">Your name<input id="f-name" name="name" autocomplete="name" required></label>
+              <label for="f-email">Your email<input id="f-email" name="email" type="email" autocomplete="email" required></label>
+            </div>
+            <div class="row2">
+              <label for="f-org">Organisation<input id="f-org" name="org" autocomplete="organization"></label>
+              <label for="f-type">Enquiry type
+                <select id="f-type" name="type">
+                  <option>OSINT / investigations</option>
+                  <option>Television</option>
+                  <option>Radio</option>
+                  <option>Digital / writing</option>
+                  <option>MC / event hosting</option>
+                  <option>Press or interview request</option>
+                  <option>Something else</option>
+                </select>
+              </label>
+            </div>
+            <label for="f-date">Date(s), if known<input id="f-date" name="date" placeholder="e.g. 14 March 2027"></label>
+            <label for="f-msg">Message<textarea id="f-msg" name="message" required placeholder="Tell Kat about the project, event or story."></textarea></label>
+            <p class="err" id="f-err" role="alert"></p>
+            <div><button class="btn form-btn" type="submit">Send enquiry</button></div>
+          </form>
+          <div class="thanks" id="thanks" role="status" aria-live="polite">
+            <h3>Almost there</h3>
+            <p>Your email app should open with your message ready to send. If it doesn't, email Kat at <a id="mail-addr" href="#"></a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© <span id="yr"></span> Kat Stefanovic</span><span>OSINT · Television · Radio · Digital</span></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
