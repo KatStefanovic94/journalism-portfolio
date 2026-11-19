@@ -4,13 +4,7 @@ const WORK = [
   { m: "tv", real: true, role: "produce", title: "Following police as they try to catch online predators", outlet: "A Current Affair", desc: "Inside a specialist police team tracking down online predators to protect children.", date: "May 2023", dur: "Producer", link: "https://www.youtube.com/watch?v=TJx0LLp4RYI" },
   { m: "tv", real: true, role: "produce", title: "Welcome development for woman dudded by her own bank", outlet: "A Current Affair", desc: "After the story aired, ANZ agreed to refund the $144,000 in life savings a retired widow lost to a banking scam.", date: "May 2023", dur: "Producer", link: "https://www.youtube.com/watch?v=sUFJr8ke4x0" },
   { m: "tv", real: true, role: "produce", title: "Woman's fight for justice decades after alleged rape", outlet: "A Current Affair", desc: "A Sydney woman's 18-year fight for justice, after she first went to police at the age of 14 to report that she had been raped.", date: "2022", dur: "Producer", link: "https://www.youtube.com/watch?v=uU7ky_pM9R0&t=144s" },
-  { m: "tv", real: true, role: "produce", note: "Kat secured the exclusive interview with Patrick Conolly.", title: "Mayor stabbed after alleged home invasion", outlet: "A Current Affair", desc: "As mayor, Patrick Conolly led his community through the worst floods in recent memory. Then he was stabbed in an alleged home invasion.", date: "Sep 2022", dur: "Producer", link: "https://www.facebook.com/ACurrentAffair9/videos/493103598850232/" },
-  { m: "radio", title: "Breakfast show live reports", desc: "Weekly live two-ways from the scene of the morning's lead story.", date: "Jan 2026", dur: "Series", link: "#" },
-  { m: "digital", title: "Long-read feature", desc: "A 2,500-word investigation published online with an accompanying short video.", date: "Nov 2025", dur: "12 min read", link: "#" },
-  { m: "mc", title: "Industry awards night", desc: "Hosted a 400-guest ceremony, scripted links and interviewed winners on stage.", date: "Oct 2025", dur: "3 hrs", link: "#" },
-  { m: "radio", title: "Documentary feature", desc: "Produced and presented a half-hour audio documentary.", date: "Jun 2025", dur: "28:40", link: "#" },
-  { m: "digital", title: "Social video series", desc: "Six-part explainer series for short-form video platforms.", date: "Apr 2025", dur: "6 × 60s", link: "#" },
-  { m: "mc", title: "Conference panel chair", desc: "Chaired a panel on the future of local news.", date: "Feb 2025", dur: "60 min", link: "#" }
+  { m: "tv", real: true, role: "produce", note: "Kat secured the exclusive interview with Patrick Conolly.", title: "Mayor stabbed after alleged home invasion", outlet: "A Current Affair", desc: "As mayor, Patrick Conolly led his community through the worst floods in recent memory. Then he was stabbed in an alleged home invasion.", date: "Sep 2022", dur: "Producer", link: "https://www.facebook.com/ACurrentAffair9/videos/493103598850232/" }
 ];
 const LABEL = { tv: "Television", radio: "Radio", digital: "Digital", mc: "MC / Live" };
 const ROLE = { report: "Reporter", produce: "Producer" };
@@ -73,12 +67,11 @@ WORK.filter(w => w.real).slice(0, 4).forEach(w => {
   features.appendChild(el);
 });
 
-// Portfolio page: Reporting / Producing / Radio, digital & live
+// Portfolio page: Reporting / Producing
 const worklist = document.getElementById("worklist");
 const GROUPS = [
   { key: "report", title: "Reporting", test: w => w.role === "report" },
-  { key: "produce", title: "Producing", test: w => w.role === "produce" },
-  { key: "other", title: "Radio, digital & live", test: w => !w.role }
+  { key: "produce", title: "Producing", test: w => w.role === "produce" }
 ];
 let filter = "all";
 function itemEl(w) {
