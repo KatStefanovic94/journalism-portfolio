@@ -141,7 +141,7 @@ window.addEventListener("hashchange", route);
 document.getElementById("yr").textContent = new Date().getFullYear();
 
 // Contact form: opens the visitor's email app with the enquiry ready to send
-const CONTACT_EMAIL = "your@email.com";
+const CONTACT_EMAIL = "k.stefanovic12@gmail.com";
 const form = document.getElementById("enquiry");
 form.addEventListener("submit", e => {
   e.preventDefault();
